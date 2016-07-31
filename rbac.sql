@@ -14,7 +14,7 @@ CREATE TABLE rbac_role
 (
     id smallint(6) unsigned primary key not null auto_increment comment '角色ID',
     name varchar(20) not null comment '角色名称',
-    status tintint(1) unsigned comment  '状态信息',
+    status tinyint(1)  comment  '状态信息',
     remark varchar(255) comment  '备注信息'
 );
 
@@ -22,7 +22,7 @@ CREATE TABLE rbac_role
 CREATE TABLE rbac_node
 (
     id smallint(6) unsigned primary key not null auto_increment comment  '节点ID',
-    name varchar(20) not null comment  '节点英文名称'
+    name varchar(20) not null comment  '节点英文名称',
     title varchar(50) comment '节点中文名称',
     status tinyint(1)  comment '状态信息',
     remark varchar(255) comment '备注信息',
