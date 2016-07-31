@@ -44,5 +44,6 @@ CREATE TABLE rbac_access
 CREATE TABLE rbac_role_user
 (
     role_id smallint(6) unsigned comment '角色外键',
-    user_id smallint(6) unsigned comment '用户外键'
+    user_id smallint(6) unsigned comment '用户外键',
+    primary key(role_id,user_id)
 );
